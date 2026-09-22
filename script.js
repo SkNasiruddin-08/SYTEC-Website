@@ -4,12 +4,12 @@ async function loadSheetData() {
   try {
     const response = await fetch(SHEET_URL);
     const data = await response.json();
-    console.log("Sheet Data Loaded:", data);
-    
-    // Website-e data dekhate erpor dynamic UI element add kora jabe
+    console.log("Sheet Data Loaded Successfully:", data);
   } catch (error) {
-    console.error("Error fetching data:", error);
+    console.warn("Sheet data load link offline or blocked, running default site styles.", error);
   }
 }
 
-document.addEventListener("DOMContentLoaded", loadSheetData);
+document.addEventListener("DOMContentLoaded", () => {
+  loadSheetData();
+});
