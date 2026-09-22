@@ -56,3 +56,19 @@ main, section, .hero, .hero-content, #home {
   opacity: 1 !important;
   visibility: visible !important;
 }
+/* FORCE TEXT VISIBILITY FIX */
+* {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+body, main, section, div, h1, h2, h3, h4, p, span, a {
+  color: #ffffff !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.hero, .hero-content, #home, .container {
+  display: block !important;
+  min-height: 200px !important;
+}
